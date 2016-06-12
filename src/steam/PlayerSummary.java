@@ -29,6 +29,7 @@ public class PlayerSummary extends SteamWebservice {
 
 	@Override
 	URL createUrl(Object[] params) throws MalformedURLException {
+		return new URL(Txt.urlSteamWebRequest("GetPlayerSummaries", "v0002", Confidential.WEB_API_KEY, "" + ((SteamId) params[0]).toCommunityId()));
 	}
 
 	void fillData(JsonParser parser) {

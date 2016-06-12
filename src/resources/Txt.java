@@ -128,6 +128,7 @@ public class Txt {
 		return "http://steamcommunity.com/sharedfiles/filedetails/?id=289849044";
 	}
 
+	public static String urlPayPalDonation() {
 		return "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3WGSV4XCXYG3L";
 	}
 
