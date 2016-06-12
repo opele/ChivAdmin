@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="262.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.views.CommandController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#changeMapAction" style="-fx-base: yellow;;" text="Change Map" />
+      <Button mnemonicParsing="false" onAction="#rotateMapAction" style="-fx-base: blue;" text="Rotate Map" />
+      <Button mnemonicParsing="false" onAction="#changeGamePasswordAction" style="-fx-base: red;" text="Change Game Password" />
+      <Button mnemonicParsing="false" onAction="#gameConsoleCommandAction" style="-fx-base: purple;" text="Game Console Command" />
+   </children>
+   <padding>
+      <Insets top="50.0" />
+   </padding>
+</VBox>

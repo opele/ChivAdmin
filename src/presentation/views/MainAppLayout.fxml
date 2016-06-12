@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.8738532110091743" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="870.0" prefWidth="1376.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.views.MainAppController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="688.0" prefWidth="1374.0" styleClass="main-pane" stylesheets="@../../resources/ChivAssets/MainStyle.css">
+         <children>
+            <StackPane layoutX="66.0" layoutY="3.0" prefHeight="199.0" prefWidth="1246.0" AnchorPane.leftAnchor="64.0" AnchorPane.rightAnchor="64.0">
+               <children>
+                  <ImageView fitHeight="199.0" fitWidth="232.0" StackPane.alignment="TOP_LEFT">
+                     <image>
+                        <Image url="@../../resources/ChivAssets/king_pointing.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="196.0" fitWidth="254.0" StackPane.alignment="TOP_RIGHT">
+                     <image>
+                        <Image url="@../../resources/ChivAssets/king_sitting.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#addServerIconClick" onMouseEntered="#hoverEffectEntered" onMouseExited="#hoverEffectExited" StackPane.alignment="BOTTOM_CENTER">
+                     <image>
+                        <Image url="@../../resources/ChivAssets/icons/add-server-icon.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets bottom="30.0" left="-570.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#playerActionIconClick" onMouseEntered="#hoverEffectEntered" onMouseExited="#hoverEffectExited" StackPane.alignment="BOTTOM_CENTER">
+                     <image>
+                        <Image url="@../../resources/ChivAssets/icons/ghostbusters.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets bottom="30.0" left="-340.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#settingsIconClick" onMouseEntered="#hoverEffectEntered" onMouseExited="#hoverEffectExited" StackPane.alignment="BOTTOM_CENTER">
+                     <image>
+                        <Image url="@../../resources/ChivAssets/icons/setting.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets bottom="30.0" left="100.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#payPalDonationIconClick" onMouseEntered="#hoverEffectEntered" onMouseExited="#hoverEffectExited" StackPane.alignment="BOTTOM_CENTER">
+                     <image>
+                        <Image url="@../../resources/ChivAssets/icons/Heart-icon.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets bottom="30.0" left="340.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" onMouseClicked="#readMeIconClick" onMouseEntered="#hoverEffectEntered" onMouseExited="#hoverEffectExited" StackPane.alignment="BOTTOM_CENTER">
+                     <image>
+                        <Image url="@../../resources/ChivAssets/icons/readme-icon.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets bottom="30.0" left="570.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <Label text="Readme" StackPane.alignment="BOTTOM_CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="580.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="&lt;3" StackPane.alignment="BOTTOM_CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="330.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="Settings" StackPane.alignment="BOTTOM_CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="100.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="Kick/Ban" StackPane.alignment="BOTTOM_CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="-340.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="Add Server" StackPane.alignment="BOTTOM_CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="-570.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <ImageView blendMode="OVERLAY" fitHeight="47.0" fitWidth="592.0" onMouseClicked="#sandcastleImgControlClick" onMouseEntered="#hoverEffectEnteredSmall" onMouseExited="#hoverEffectExited" pickOnBounds="true" StackPane.alignment="TOP_CENTER">
+                     <image>
+                        <Image url="@../../resources/ChivAssets/horde/sandcastleText.jpg" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets top="20.0" />
+                     </StackPane.margin>
+                     <effect>
+                        <InnerShadow choke="0.31" height="83.19" radius="33.515" width="52.87" />
+                     </effect>
+                  </ImageView>
+                  <ImageView fitHeight="90.0" fitWidth="80.0" onMouseClicked="#commandsIconClick" onMouseEntered="#hoverEffectEntered" onMouseExited="#hoverEffectExited" StackPane.alignment="BOTTOM_CENTER">
+                     <image>
+                        <Image url="@../../resources/ChivAssets/icons/command-prompt.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets bottom="30.0" left="-120.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <Label text="Commands" StackPane.alignment="BOTTOM_CENTER">
+                     <StackPane.margin>
+                        <Insets bottom="10.0" left="-120.0" />
+                     </StackPane.margin>
+                  </Label>
+                  <Label text="Powered by:" StackPane.alignment="TOP_CENTER" />
+               </children>
+            </StackPane>
+            <TableView fx:id="serverControl" editable="true" layoutX="14.0" layoutY="251.0" prefHeight="490.0" prefWidth="356.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="251.0">
+              <columns>
+                <TableColumn prefWidth="50.0" text="Connected" />
+                <TableColumn prefWidth="145.0" text="IP" />
+                  <TableColumn prefWidth="42.0" text="Players" />
+                  <TableColumn prefWidth="118.0" text="Map" />
+              </columns>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#removeServerContextMenueTable" text="Remove" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+            <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="395.0" layoutY="250.0" prefHeight="490.0" prefWidth="602.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="395.0" AnchorPane.rightAnchor="377.0" AnchorPane.topAnchor="250.0">
+               <content>
+                  <FlowPane fx:id="playerControl" hgap="20.0" prefHeight="394.0" prefWidth="600.0" vgap="20.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </FlowPane>
+               </content>
+            </ScrollPane>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="202.0" prefHeight="45.0" prefWidth="356.0" text="Servers" underline="true" AnchorPane.leftAnchor="14.0">
+               <font>
+                  <Font name="Goudy Stout" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#e80000" height="31.1" radius="12.717500000000001" spread="0.16" width="21.77" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="395.0" layoutY="202.0" prefHeight="45.0" prefWidth="602.0" text="Players" underline="true" AnchorPane.leftAnchor="395.0" AnchorPane.rightAnchor="377.0">
+               <effect>
+                  <DropShadow color="#e80000" height="31.1" radius="12.717500000000001" spread="0.16" width="21.77" />
+               </effect>
+               <font>
+                  <Font name="Goudy Stout" size="30.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="1065.0" layoutY="202.0" prefHeight="45.0" prefWidth="254.0" text="Player" underline="true" AnchorPane.rightAnchor="55.0">
+               <effect>
+                  <DropShadow color="#e80000" height="31.1" radius="12.717500000000001" spread="0.16" width="21.77" />
+               </effect>
+               <font>
+                  <Font name="Goudy Stout" size="30.0" />
+               </font>
+            </Label>
+            <ListView fx:id="playerDetails" layoutX="1001.0" layoutY="250.0" prefHeight="490.0" prefWidth="336.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="250.0">
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#copyContextMenuPlayerDetailsAction" text="copy to clipboard" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu></ListView>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="127.0" prefWidth="1137.0">
+         <children>
+            <Separator layoutX="543.0" layoutY="-781.0" orientation="VERTICAL" prefHeight="874.0" prefWidth="0.0" AnchorPane.bottomAnchor="13.0" />
+            <ScrollPane layoutX="7.0" layoutY="4.0" prefHeight="71.0" prefWidth="521.0" AnchorPane.bottomAnchor="31.0" AnchorPane.topAnchor="4.0">
+               <content>
+                  <TextFlow fx:id="chatMsgControl" prefHeight="71.0" prefWidth="499.0" />
+               </content>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#copyContextMenuChatAction" text="copy to clipboard" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu></ScrollPane>
+            <TextField layoutX="7.0" layoutY="77.0" onKeyTyped="#sendChatAction" prefHeight="31.0" prefWidth="438.0" AnchorPane.bottomAnchor="-2.0" />
+            <CheckBox fx:id="wisperControl" layoutX="448.0" layoutY="75.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="80.0" text="whisper" AnchorPane.bottomAnchor="0.0">
+               <tooltip>
+                  <Tooltip text="Send the message only to the selected player" />
+               </tooltip></CheckBox>
+            <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="559.0" layoutY="4.0" prefHeight="71.0" prefWidth="699.0" AnchorPane.bottomAnchor="31.0" AnchorPane.leftAnchor="559.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="4.0">
+               <content>
+                  <TextFlow fx:id="sysMsgControl" prefHeight="70.0" prefWidth="679.0" />
+               </content>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#copyContextMenuSysMsgAction" text="copy to clipboard" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </ScrollPane>
+            <ToggleButton layoutX="559.0" layoutY="77.0" mnemonicParsing="false" onAction="#scrollLockAction" style="fx-base: #fba71b;" text="scroll lock" AnchorPane.bottomAnchor="-3.0" />
+            <TextField layoutX="645.0" layoutY="77.0" onKeyTyped="#typedTextFilterAction" prefHeight="31.0" prefWidth="113.0" promptText="text filter" AnchorPane.bottomAnchor="-3.0" />
+            <ComboBox fx:id="sysMsgTypeFilterControl" layoutX="758.0" layoutY="77.0" onAction="#selectFilterAction" prefHeight="31.0" prefWidth="180.0" promptText="filter message type" AnchorPane.bottomAnchor="-3.0" />
+            <TextField fx:id="sysMsgMaxLinesFilterControl" layoutX="938.0" layoutY="77.0" onKeyTyped="#typedMaxLinesFilterAction" prefHeight="31.0" prefWidth="80.0" promptText="max lines" AnchorPane.bottomAnchor="-3.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>

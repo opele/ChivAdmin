@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="536.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.views.PlayerActionController">
+   <children>
+      <Accordion fx:id="actionContainerControl" prefHeight="536.0" prefWidth="334.0">
+        <panes>
+          <TitledPane prefHeight="298.0" prefWidth="284.0" text="Ban">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="92.0" layoutY="188.0" mnemonicParsing="false" onAction="#confirmBanAction" prefHeight="31.0" prefWidth="150.0" text="Send Command" />
+                        <TextField fx:id="banReasonControl" layoutX="30.0" layoutY="113.0" prefHeight="31.0" prefWidth="274.0" promptText="Reason" />
+                        <ChoiceBox fx:id="banPlayerPickControl" layoutX="32.0" layoutY="51.0" prefHeight="31.0" prefWidth="270.0" />
+                        <Label layoutX="32.0" layoutY="30.0" text="Pick a Player" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+          <TitledPane text="Kick">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="92.0" layoutY="176.0" mnemonicParsing="false" onAction="#confirmKickAction" prefHeight="31.0" prefWidth="150.0" text="Send Command" />
+                        <TextField fx:id="kickReasonControl" layoutX="30.0" layoutY="119.0" prefHeight="31.0" prefWidth="274.0" promptText="Reason" />
+                        <ChoiceBox fx:id="kickPlayerPickControl" layoutX="31.0" layoutY="50.0" prefHeight="31.0" prefWidth="273.0" />
+                        <Label layoutX="31.0" layoutY="29.0" text="Pick a Player" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane text="Temporary Ban">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="tmpBanReasonControl" layoutX="30.0" layoutY="150.0" prefHeight="31.0" prefWidth="274.0" promptText="Reason" />
+                        <Button layoutX="98.0" layoutY="201.0" mnemonicParsing="false" onAction="#confirmTmpBanAction" prefHeight="31.0" prefWidth="150.0" text="Send Command" />
+                        <ChoiceBox fx:id="tmpBanPlayerPickControl" layoutX="31.0" layoutY="41.0" prefHeight="31.0" prefWidth="271.0" />
+                        <Label layoutX="30.0" layoutY="20.0" text="Pick a Player" />
+                        <Slider fx:id="banDurationControl" blockIncrement="60.0" layoutX="11.0" layoutY="87.0" max="144000.0" min="1.0" prefHeight="18.0" prefWidth="297.0" value="1.0" />
+                        <Label layoutX="11.0" layoutY="118.0" text="Ban duration:" />
+                        <Label fx:id="banDurationDisplayControl" layoutX="106.0" layoutY="118.0" text="1 Minute" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane text="Unban">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="steamIdControl" layoutX="92.0" layoutY="64.0" prefHeight="31.0" prefWidth="150.0" promptText="U:1:xxxxxxxxx" />
+                        <Label layoutX="94.0" layoutY="43.0" text="Type a Steam Id" />
+                        <Button layoutX="92.0" layoutY="160.0" mnemonicParsing="false" onAction="#confirmUnbanAction" prefHeight="31.0" prefWidth="150.0" text="Send Command" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane text="Change Score">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="92.0" layoutY="176.0" mnemonicParsing="false" onAction="#confirmChangeScoreAction" prefHeight="31.0" prefWidth="150.0" text="Send Command" />
+                        <TextField fx:id="scoreInputControl" layoutX="30.0" layoutY="119.0" prefHeight="31.0" prefWidth="274.0" promptText="Score Change" />
+                        <ChoiceBox fx:id="changeScorePlayerPickControl" layoutX="31.0" layoutY="50.0" prefHeight="31.0" prefWidth="273.0" />
+                        <Label layoutX="31.0" layoutY="29.0" text="Pick a Player" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane text="Kill">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="91.0" layoutY="159.0" mnemonicParsing="false" onAction="#confirmKillPlayerAction" prefHeight="31.0" prefWidth="150.0" text="Send Command" />
+                        <ChoiceBox fx:id="killPlayerPickControl" layoutX="31.0" layoutY="50.0" prefHeight="31.0" prefWidth="273.0" />
+                        <Label layoutX="31.0" layoutY="29.0" text="Pick a Player" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane text="Inebriate">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="93.0" layoutY="159.0" mnemonicParsing="false" onAction="#confirmInebriatePlayerAction" prefHeight="31.0" prefWidth="150.0" text="Send Command" />
+                        <ChoiceBox fx:id="inebriatePlayerPickControl" layoutX="31.0" layoutY="50.0" prefHeight="31.0" prefWidth="273.0" />
+                        <Label layoutX="31.0" layoutY="29.0" text="Pick a Player" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane text="Player Console Command">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="91.0" layoutY="201.0" mnemonicParsing="false" onAction="#confirmConsoleCommandPlayerAction" prefHeight="31.0" prefWidth="150.0" text="Send Command" />
+                        <TextField fx:id="consoleCommandControl" layoutX="29.0" layoutY="144.0" prefHeight="31.0" prefWidth="274.0" promptText="Command" />
+                        <ChoiceBox fx:id="consoleCommandPlayerPickControl" layoutX="31.0" layoutY="50.0" prefHeight="31.0" prefWidth="273.0" />
+                        <Label layoutX="31.0" layoutY="29.0" text="Execute for a single Player" />
+                        <CheckBox fx:id="consoleCommandAllPlayersControl" layoutX="31.0" layoutY="101.0" mnemonicParsing="false" text="Execute for all Players" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+        </panes>
+      </Accordion>
+   </children>
+</AnchorPane>

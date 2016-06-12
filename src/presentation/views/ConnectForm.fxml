@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="291.0" prefWidth="291.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.views.ConnectController">
+   <children>
+      <Button layoutX="108.0" layoutY="246.0" mnemonicParsing="false" onAction="#confirmConnectAction" text="Connect" />
+      <CheckBox fx:id="maskSwitchControl" layoutX="59.0" layoutY="195.0" mnemonicParsing="false" text="Display Password" />
+      <PasswordField fx:id="passwordControl" layoutX="48.0" layoutY="146.0" prefHeight="31.0" prefWidth="187.0" promptText="Admin Password">
+         <effect>
+            <Glow level="0.32" />
+         </effect>
+      </PasswordField>
+      <TextField fx:id="unmaskedPasswordControl" layoutX="48.0" layoutY="145.0" prefHeight="31.0" prefWidth="187.0" visible="false" />
+      <TextField fx:id="ipControl" layoutX="48.0" layoutY="54.0" prefHeight="31.0" prefWidth="187.0" promptText="IP" />
+      <TextField fx:id="portControl" layoutX="48.0" layoutY="97.0" promptText="Port" />
+      <Label layoutX="51.0" layoutY="14.0" text="Fill in the server infos">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="243.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/ChivAssets/icons/info.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="243.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/ChivAssets/icons/info.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="243.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/ChivAssets/icons/info.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="245.0" layoutY="59.0" prefHeight="21.0" prefWidth="20.0">
+         <tooltip>
+            <Tooltip text="The IP-Address of the server" />
+         </tooltip>
+      </Label>
+      <Label layoutX="245.0" layoutY="102.0" prefHeight="21.0" prefWidth="20.0">
+         <tooltip>
+            <Tooltip text="The port number set in the server config. Example: RConPort=1234" wrapText="true" />
+         </tooltip>
+      </Label>
+      <Label layoutX="244.0" layoutY="152.0" prefHeight="21.0" prefWidth="20.0">
+         <tooltip>
+            <Tooltip text="The admin password set in the server config. Example: AdminPassword=123 " />
+         </tooltip>
+      </Label>
+   </children>
+</AnchorPane>

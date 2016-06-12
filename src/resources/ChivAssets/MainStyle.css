@@ -1,0 +1,7 @@
+
+
+.main-pane {
+	-fx-background-image: url(horde/background.jpg);
+  -fx-background-repeat: repeat;
+  -fx-background-size: 100%;
+}

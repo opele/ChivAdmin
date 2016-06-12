@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.views.SettingsController">
+  <content>
+    <AnchorPane prefHeight="617.0" prefWidth="596.0">
+         <children>
+            <RadioButton fx:id="applyAutoKickForAllServers" layoutX="54.0" layoutY="132.0" mnemonicParsing="false" text="apply auto kick for all connected servers">
+               <toggleGroup>
+                  <ToggleGroup fx:id="serverTargets" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="applyAutoKickForSelectedServer" layoutX="53.0" layoutY="91.0" mnemonicParsing="false" selected="true" text="apply auto kick for selected server only" toggleGroup="$serverTargets" />
+            <CheckBox fx:id="enablePingAutoKick" layoutX="53.0" layoutY="199.0" mnemonicParsing="false" text="enable ping auto kick" />
+            <TextField fx:id="pingTolerance" layoutX="359.0" layoutY="193.0" prefHeight="34.0" prefWidth="83.0" promptText="tolerance">
+               <tooltip>
+                  <Tooltip text="How long the ping is allowed to exceed the limit in seconds." />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="maxPing" layoutX="244.0" layoutY="193.0" prefHeight="34.0" prefWidth="83.0" promptText="max ping">
+               <tooltip>
+                  <Tooltip text="The maximum allowed ping." />
+               </tooltip>
+            </TextField>
+            <TextField fx:id="maxTeamdamage" layoutX="298.0" layoutY="246.0" prefHeight="34.0" prefWidth="136.0" promptText="max teamdamage">
+               <tooltip>
+                  <Tooltip text="The maximum allowed teamdamage." />
+               </tooltip>
+            </TextField>
+            <CheckBox fx:id="enableTeamdamageAutoKick" layoutX="54.0" layoutY="252.0" mnemonicParsing="false" text="enable team damage auto kick" />
+            <Button layoutX="236.0" layoutY="469.0" mnemonicParsing="false" onAction="#saveAndApply" text="Save and Apply" />
+            <CheckBox fx:id="displayPlayerAvatar" layoutX="53.0" layoutY="353.0" mnemonicParsing="false" text="show player avatars" />
+            <Region layoutX="23.0" layoutY="73.0" prefHeight="236.0" prefWidth="457.0" style="-fx-border-style: dotted;" />
+            <Label layoutX="23.0" layoutY="52.0" text="Auto Kick" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
