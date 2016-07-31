@@ -143,7 +143,7 @@ public class Txt {
 	}
 
 	public static String autoKickedTeamdamage(int maxTeamdamage) {
-		return String.format("ChivAdmin: Your ping is too high (> %d)", maxTeamdamage);
+		return String.format("ChivAdmin: Your teamdamage is too high (> %d)", maxTeamdamage);
 	}
 
 }
