@@ -1,4 +1,4 @@
-# ChivAdmin
+# ChivAdmin v 1.2
 ChivAdmin Desktop App: RCon Client for Chivalry Medieval Warefare (Mutator mod exluded)
 
 ## Installation:
